@@ -2,7 +2,7 @@
 
 resource "aws_db_instance" "mysql" {
   allocated_storage       = var.MYSQL_STORAGE
-  db_name                 = "roboshop-${var.ENV}-mysql"
+  identifier              = "roboshop-${var.ENV}-mysql"
   engine                  = var.MYSQL_ENGINE
   engine_version          = var.MYSQL_ENGINE_VERSION
   instance_class          = var.MYSQL_NODE_TYPE
