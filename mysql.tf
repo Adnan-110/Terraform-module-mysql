@@ -1,5 +1,4 @@
 # Provisions RDS/MYSQL DB Instance
-
 resource "aws_db_instance" "mysql" {
   allocated_storage       = var.MYSQL_STORAGE
   identifier              = "roboshop-${var.ENV}-mysql"
@@ -29,6 +28,3 @@ resource "aws_db_subnet_group" "mysql" {
     Name = "roboshop-${var.ENV}-mysql-subnet-group"
   }
 }
-
-
-
